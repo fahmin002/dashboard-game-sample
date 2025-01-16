@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Expo Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0078d7;
+            color: white;
+            padding: 10px 0;
+        }
+        .header img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .dropdown-container {
+            margin-bottom: 20px;
+        }
+        .dropdown-container h2 {
+            margin-bottom: 10px;
+        }
+        .dropdown {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .dropdown a {
+            text-decoration: none;
+            color: #0078d7;
+        }
+        .dropdown a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo Kampus">
+        <h1>Game Expo Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="dropdown-container">
+            <h2>Action Games</h2>
+            <select class="dropdown" onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select a Game</option>
+                <option value="link-to-game1.html">Game 1</option>
+                <option value="link-to-game2.html">Game 2</option>
+                <option value="link-to-game3.html">Game 3</option>
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <h2>Adventure Games</h2>
+            <select class="dropdown" onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select a Game</option>
+                <option value="link-to-game4.html">Game 4</option>
+                <option value="link-to-game5.html">Game 5</option>
+                <option value="link-to-game6.html">Game 6</option>
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <h2>Puzzle Games</h2>
+            <select class="dropdown" onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select a Game</option>
+                <option value="link-to-game7.html">Game 7</option>
+                <option value="link-to-game8.html">Game 8</option>
+                <option value="link-to-game9.html">Game 9</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
